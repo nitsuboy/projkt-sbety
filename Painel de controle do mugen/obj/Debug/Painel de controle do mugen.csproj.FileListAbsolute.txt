@@ -1,0 +1,29 @@
+F:\source\Painel de controle do mugen\Painel de controle do mugen\bin\Debug\Painel de controle do mugen.exe.config
+F:\source\Painel de controle do mugen\Painel de controle do mugen\bin\Debug\Painel de controle do mugen.exe
+F:\source\Painel de controle do mugen\Painel de controle do mugen\bin\Debug\Painel de controle do mugen.pdb
+F:\source\Painel de controle do mugen\Painel de controle do mugen\obj\Debug\Painel de controle do mugen.csproj.AssemblyReference.cache
+F:\source\Painel de controle do mugen\Painel de controle do mugen\obj\Debug\Painel_de_controle_do_mugen.Form1.resources
+F:\source\Painel de controle do mugen\Painel de controle do mugen\obj\Debug\Painel_de_controle_do_mugen.Properties.Resources.resources
+F:\source\Painel de controle do mugen\Painel de controle do mugen\obj\Debug\Painel de controle do mugen.csproj.GenerateResource.cache
+F:\source\Painel de controle do mugen\Painel de controle do mugen\obj\Debug\Painel de controle do mugen.csproj.CoreCompileInputs.cache
+F:\source\Painel de controle do mugen\Painel de controle do mugen\obj\Debug\Painel de controle do mugen.exe
+F:\source\Painel de controle do mugen\Painel de controle do mugen\obj\Debug\Painel de controle do mugen.pdb
+F:\source\Painel de controle do mugen\Painel de controle do mugen\obj\Debug\Painel_de_controle_do_mugen.Form2.resources
+F:\source\Painel de controle do mugen\Painel de controle do mugen\bin\Debug\CsvHelper.dll
+F:\source\Painel de controle do mugen\Painel de controle do mugen\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+F:\source\Painel de controle do mugen\Painel de controle do mugen\bin\Debug\Microsoft.Bcl.HashCode.dll
+F:\source\Painel de controle do mugen\Painel de controle do mugen\bin\Debug\System.Buffers.dll
+F:\source\Painel de controle do mugen\Painel de controle do mugen\bin\Debug\System.Memory.dll
+F:\source\Painel de controle do mugen\Painel de controle do mugen\bin\Debug\System.Numerics.Vectors.dll
+F:\source\Painel de controle do mugen\Painel de controle do mugen\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+F:\source\Painel de controle do mugen\Painel de controle do mugen\bin\Debug\System.Threading.Tasks.Extensions.dll
+F:\source\Painel de controle do mugen\Painel de controle do mugen\bin\Debug\CsvHelper.xml
+F:\source\Painel de controle do mugen\Painel de controle do mugen\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+F:\source\Painel de controle do mugen\Painel de controle do mugen\bin\Debug\Microsoft.Bcl.HashCode.xml
+F:\source\Painel de controle do mugen\Painel de controle do mugen\bin\Debug\System.Buffers.xml
+F:\source\Painel de controle do mugen\Painel de controle do mugen\bin\Debug\System.Memory.xml
+F:\source\Painel de controle do mugen\Painel de controle do mugen\bin\Debug\System.Numerics.Vectors.xml
+F:\source\Painel de controle do mugen\Painel de controle do mugen\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+F:\source\Painel de controle do mugen\Painel de controle do mugen\bin\Debug\System.Threading.Tasks.Extensions.xml
+F:\source\Painel de controle do mugen\Painel de controle do mugen\bin\Debug\Database1.mdf
+F:\source\Painel de controle do mugen\Painel de controle do mugen\bin\Debug\Database1_log.ldf

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Painel de controle do mugen", "Painel de controle do mugen\Painel de controle do mugen.csproj", "{6627CCBE-0E4A-4BB1-ABCC-ACF8D0E8059F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6627CCBE-0E4A-4BB1-ABCC-ACF8D0E8059F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6627CCBE-0E4A-4BB1-ABCC-ACF8D0E8059F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6627CCBE-0E4A-4BB1-ABCC-ACF8D0E8059F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6627CCBE-0E4A-4BB1-ABCC-ACF8D0E8059F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F2171703-6C2B-4928-9CD7-6772B914EE1A}
+	EndGlobalSection
+EndGlobal
