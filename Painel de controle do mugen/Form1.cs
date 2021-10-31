@@ -57,8 +57,11 @@ namespace Painel_de_controle_do_mugen
             {
                 if (s.Contains("name") || s.Contains("Name"))
                 {
-                    name = s;
-                    break;
+                    if(s.Contains("file") == false)
+                    {
+                        name = s;
+                        break;
+                    } 
                 }
             }
             a = name.Split('"');
@@ -175,12 +178,18 @@ namespace Painel_de_controle_do_mugen
             int[] p = { rnd.Next(Chars.Length), rnd.Next(Chars.Length)};
             int mp = rnd.Next(Mapas.Length);
             string[] log;
-            bg.
+            bg.label1.Text = Getname(p[0]) + " VS " + Getname(p[1]) + "\n meu cu" ;
+            bg.label1.Location = new Point(640-(bg.label1.Width/2),250);
+            bg.label1.Refresh();
+            System.Threading.Thread.Sleep(6000);
             if (checkBox2.Checked)
             {
                 argumentos = Chars[p[0]] + " " + Chars[p[1]] + " -s " + Mapas[mp] + " -rounds 1 -r mugen2  -log h.log";
                 mugen.StartInfo.Arguments = argumentos;
                 mugen.Start();
+                System.Threading.Thread.Sleep(5000);
+                bg.label1.Text = "";
+                bg.label1.Refresh();
                 mugen.WaitForExit();
             }
             argumentos = Chars[p[0]] + " " + Chars[p[1]] + " -s " + Mapas[mp] + " -p1.ai 8 -p2.ai 8  -rounds 2  -log battle.log";

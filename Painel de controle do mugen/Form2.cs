@@ -15,15 +15,7 @@ namespace Painel_de_controle_do_mugen
         
         public Form2()
         {
-
-            Bitmap wall = Properties.Resources.wallpaper;
-            InitializeComponent();
-            this.BackgroundImage = wall;
-            
-        }
-        public void clear_shit()
-        {
-            this.cont
+            InitializeComponent();    
         }
     }
 }
