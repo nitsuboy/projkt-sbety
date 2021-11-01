@@ -67,7 +67,6 @@ namespace Painel_de_controle_do_mugen
             a = name.Split('"');
             return a[1];
         }
-
         void aviso(int i)
         {
             switch (i)
@@ -149,14 +148,15 @@ namespace Painel_de_controle_do_mugen
 
                 for (int i = 0; i < 2; i++)
                 {
-                    if (dataSet1.Reg_de_lutas.AsEnumerable().Any(row => p[i] == row.Field<String>("Personagem")) == true)
+                    if (dataSet1.Reg_de_lutas.AsEnumerable().Any(row => p[i] == row.Field<String>("Personagem")))
                     {
-                        DataRow[] teste = dataSet1.Reg_de_lutas.Select("Personagem = '" + p[i] + "'");
-                        int auxp = (int)teste[0]["Partidas"] + part;
-                        int auxv = (int)teste[0]["Partidas"] + V[i];
-                        teste[0]["Partidas"] = auxp;
-                        teste[0]["Vitorias"] = auxv;
-                        teste[0]["vitpercnt"] = (int)(0.5f + ((100f * auxv) / auxp));
+                        DataRow teste = dataSet1.Reg_de_lutas.AsEnumerable().Where((row) => row.Field<string>("Personagem").Equals(p[i])).FirstOrDefault();
+                        //DataRow[] teste = dataSet1.Reg_de_lutas.Select("Personagem = \"" + p[i] + "\"");
+                        int auxp = (int)teste["Partidas"] + part;
+                        int auxv = (int)teste["Partidas"] + V[i];
+                        teste["Partidas"] = auxp;
+                        teste["Vitorias"] = auxv;
+                        teste["vitpercnt"] = (int)(0.5f + ((100f * auxv) / auxp));
                     }
                     else
                     {
@@ -178,18 +178,15 @@ namespace Painel_de_controle_do_mugen
             int[] p = { rnd.Next(Chars.Length), rnd.Next(Chars.Length)};
             int mp = rnd.Next(Mapas.Length);
             string[] log;
-            bg.label1.Text = Getname(p[0]) + " VS " + Getname(p[1]) + "\n meu cu" ;
-            bg.label1.Location = new Point(640-(bg.label1.Width/2),250);
-            bg.label1.Refresh();
-            System.Threading.Thread.Sleep(6000);
+            bg.anunciar(Getname(p[0]) + " VS " + Getname(p[1]),"cu");
+            System.Threading.Thread.Sleep(5000);
             if (checkBox2.Checked)
             {
                 argumentos = Chars[p[0]] + " " + Chars[p[1]] + " -s " + Mapas[mp] + " -rounds 1 -r mugen2  -log h.log";
                 mugen.StartInfo.Arguments = argumentos;
                 mugen.Start();
                 System.Threading.Thread.Sleep(5000);
-                bg.label1.Text = "";
-                bg.label1.Refresh();
+                bg.reiniciar();
                 mugen.WaitForExit();
             }
             argumentos = Chars[p[0]] + " " + Chars[p[1]] + " -s " + Mapas[mp] + " -p1.ai 8 -p2.ai 8  -rounds 2  -log battle.log";
@@ -386,6 +383,7 @@ namespace Painel_de_controle_do_mugen
         {
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
+                dataSet1.Reg_de_lutas.Clear();
                 dataSet1.Reg_de_lutas.ReadXml(openFileDialog1.FileName);
                 aviso(6);
             }
@@ -413,9 +411,15 @@ namespace Painel_de_controle_do_mugen
                 loop_check.Checked = false;
             }
         }
-
         private void button7_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void testadorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form3 n = new Form3();
+            n.Show();
 
         }
     }

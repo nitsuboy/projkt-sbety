@@ -27,3 +27,4 @@ F:\source\Painel de controle do mugen\Painel de controle do mugen\bin\Debug\Syst
 F:\source\Painel de controle do mugen\Painel de controle do mugen\bin\Debug\System.Threading.Tasks.Extensions.xml
 F:\source\Painel de controle do mugen\Painel de controle do mugen\bin\Debug\Database1.mdf
 F:\source\Painel de controle do mugen\Painel de controle do mugen\bin\Debug\Database1_log.ldf
+F:\source\Painel de controle do mugen\Painel de controle do mugen\obj\Debug\Painel_de_controle_do_mugen.Form3.resources
